@@ -1,7 +1,7 @@
 # Problem
-In our infrastructure there is a production bucket. The security team does not want any user to drop any file into this bucket. If a user uploads a file into the production bucket, the security team will like the following
- 1. Immediately delete the object dropped by the user.
- 2. Block the user from putting any object in the production bucket in future
+In our infrastructure there is a production bucket. The security team does not want any user to drop any file that is not a prod file into this bucket. If a user uploads a non_prod file into the production bucket, the security team will like the following
+ 1. Immediately delete the object if the file name does not contain 'prod' at the end.
+ 2. Block the user from putting any object in the production bucket in future until another user uploads in that bucket.
  3. Alert Security team about the incident and the remediation (2 points above)
 
  The Chief sucurity wants this process to be automated
@@ -26,11 +26,7 @@ The services we will be making use of in this project will be
      - Create s3 bucket
      - Enter a bucket name for example 'prod-bucket101'
      - Click 'Create bucket'
-     - Click on bucket and go on the 'Properties' tab
-     - Under 'Event notifications' create an 'event name' for example 'puteventnotification'
-     - Under 'Event type' select 'Put s3:ObjectCreated:Put'
-     - Under 'Destination' select 'Lambda function'
-     - Under 'Specify Lambda function' select the arn of the lamda function we created in number 2. called 'arn:aws:lambda:us-east-1:715804921220:function:s3putdeletion'
+
 
   4. CLOUDTRAIL
      - If you do not have a cloudtrail take the steps below
