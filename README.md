@@ -66,4 +66,4 @@ The services we will be making use of in this project will be
      - Under 'Endpoint' select the email of the security team that will be receiving the alert
 
 
-Next step will be to go to lambda and start to execute the code that has been provided in the s3alert.py!
+Next step will be to go to the eventfile.py and test your code to see if cloudwatch is being triggereed
