@@ -36,9 +36,10 @@ The services we will be making use of in this project will be
      - Under 'additional setting' select 'Enabled' for 'Log file validation'
      - Under 'CloudWatch Logs' select 'Enabled'
      - Under 'Log Group' select 'New'
-     - Under 'IAMRole' select 'New' input:'AWSLambdaExecute'. This automatically creates a cloudwatch role for us by default
+     - Under 'IAMRole' select 'New' and input:'AWSLambdaExecute'-This automatically creates a cloudwatch role for us by default
      - Click 'Next'
-     - Under 'Event Types' select 'Management events' 'Data events' 'Insights events'
+     - Under 'Event Types' select 'Management events' 'Data events' 'Insights events' 
+     - Under insight events you select "API calls
      - Under 'Management events' select 'API Activity' click both 'Read' and 'Write'
      - Under s3 un-click 'All current and future S3 buckets' and select the bucket we created in number 3 called 'prod-bucket101'
      - Click 'Next' and 'Create Trail'
