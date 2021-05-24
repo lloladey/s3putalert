@@ -36,7 +36,7 @@ The services we will be making use of in this project will be
      - Under 'additional setting' select 'Enabled' for 'Log file validation'
      - Under 'CloudWatch Logs' select 'Enabled'
      - Under 'Log Group' select 'New'
-     - Under 'IAMRole' select 'New' input:'AWSLambdaExecute'
+     - Under 'IAMRole' select 'New' input:'AWSLambdaExecute'. This automatically creates a cloudwatch role for us by default
      - Click 'Next'
      - Under 'Event Types' select 'Management events' 'Data events' 'Insights events'
      - Under 'Management events' select 'API Activity' click both 'Read' and 'Write'
