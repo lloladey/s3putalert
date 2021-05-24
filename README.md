@@ -25,6 +25,7 @@ The services we will be making use of in this project will be
   3. S3 BUCKET
      - Create s3 bucket
      - Enter a bucket name for example 'prod-bucket101'
+     - Under permissions uncheck "Block public access"
      - Click 'Create bucket'
 
 
@@ -60,7 +61,7 @@ The services we will be making use of in this project will be
      - Create a Topic Name for example:'s3put'
      - Click 'Create topic'
      - Create subscription. select the 'topic arn' you just created.
-     - Under 'protocol' select 'Email-JSON'
+     - Under 'protocol' select 'Email'
      - Under 'Endpoint' select the email of the security team that will be receiving the alert
 
 Next step will be to go to lambda and start to execute the code that has been provided in the s3alert.py!
