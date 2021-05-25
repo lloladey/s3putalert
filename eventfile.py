@@ -12,4 +12,4 @@ def lambda_handler(event, context):
 #paste the log you copied earlier in the box. The formated log appear down below in a json format. copy this new format, go in your lambda function and paste this in your "Test tab" save the 
 #changes, go on the "code" tab click on the "deploy" button and click on the "test" button the json file you copied in your test tab should appear in the "execution result"
 
-#you can go ahead and execute the code in the s3alert.py!
+#you can go ahead and execute the code in the s3alert.py! kindly clear out the code above before moving foward. this was for testing
